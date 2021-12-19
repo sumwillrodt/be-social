@@ -1,5 +1,4 @@
-const { User } = require('../models');
-
+const { User } = require('../models/');
 
 const userController = {
   // GET all users
@@ -23,6 +22,7 @@ const userController = {
         path: 'friends', 
         select: '-__v' 
       })
+      .select('-__v')
       .then(dbUserData => {
         if (!dbUserData) {
           res.status(404).json({ message: 'No user with this id was found.' });
@@ -33,7 +33,7 @@ const userController = {
       .catch(err => {
         console.log(err);
         res.status(400).json(err);
-      })
+      });
   },
 
   // POST a new user
