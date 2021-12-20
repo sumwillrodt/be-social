@@ -18,4 +18,4 @@ Built by Sumner Willrodt.
 Follow more of Sumner's work on [GitHub](https://github.com/sumwillrodt).
 
 ## Walk-Through Videos
-[Walk-through Video](https://drive.google.com/file/d/1oPd3g-fWjAhd4YgqL_ap8Qezl0ppu2zt/view?usp=sharing)
+[Walk-through Video](https://drive.google.com/drive/folders/110YnB-JtPVhc8EqdQOCWpLPCOqioSvCe?usp=sharing)
