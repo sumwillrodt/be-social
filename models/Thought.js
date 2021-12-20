@@ -5,15 +5,15 @@ const reactionSchema = require('./Reaction');
 const ThoughtSchema = new Schema(
  {
   thoughtText: {
-   type: String,
-   required: true,
-   minlength: 1,
-   maxlength: 280
+    type: String,
+    required: true,
+    minlength: 1,
+    maxlength: 280
   },
   createdAt: {
-   type: Date,
-   default: Date.now,
-   get: createdAtVal => dateFormat(createdAtVal)
+    type: Date,
+    default: Date.now,
+    get: createdAtVal => dateFormat(createdAtVal)
   },
   username: {
     type: String,
@@ -29,7 +29,7 @@ const ThoughtSchema = new Schema(
 );
 
 // get total count of reactions
-ThoughtSchema.reactions.virtual('reactionCount').get(function() {
+ThoughtSchema.virtual('reactionCount').get(function() {
   return this.reactions.length;
 });
 
